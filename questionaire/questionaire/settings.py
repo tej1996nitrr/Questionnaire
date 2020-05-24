@@ -138,6 +138,15 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'users.CustomUser'
 
 CRISPY_TEMPLATE_PACK = "boostrap4"
+
 SITE_ID = 1
+
 ACCOUNT_EMAIL_VERIFICATION = "none"
+
 ACCOUNT_EMAIL_REQUIRED = (True)
+
+LOGIN_URL = "/accounts/login/"
+
+LOGIN_REDIRECT_URL = "/"
+
+LOGOUT_REDIRECT_URL = "/"
