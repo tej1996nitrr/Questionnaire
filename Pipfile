@@ -12,7 +12,7 @@ django-rest-auth = "*"
 django-allauth = "*"
 django-registration = "*"
 django-crispy-forms = "*"
-django-all-auth = "*"
+
 
 [requires]
 python_version = "3.7"
