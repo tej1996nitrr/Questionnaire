@@ -1,0 +1,17 @@
+
+{% extends 'auth_layout.html' %}
+{% load crispy_forms_tags %}
+
+{% block  content %}
+
+<div  class="login-form-container">
+    <br>
+    <h1>Login</h1>
+    <hr>
+    <form action="" method="POST"></form>
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-sm btn-outline-primary">Login</button>
+
+</div>
+{% endblock %}
