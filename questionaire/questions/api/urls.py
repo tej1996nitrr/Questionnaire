@@ -2,7 +2,7 @@ from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 
 from .views import QuestionViewset as qv
-from .views import AnswerCreateAPIView,AnswerListAPIView, AnswerRUDAPIView
+from .views import AnswerCreateAPIView,AnswerListAPIView, AnswerRUDAPIView, AnswerLikeAPIView
 
 router = DefaultRouter()
 router.register(r"", qv)
@@ -12,6 +12,7 @@ urlpatterns = [
     path("questions/<slug:slug>/answer/",AnswerCreateAPIView.as_view(), name="answer-create" ),
     path("questions/<slug:slug>/answers/",AnswerListAPIView.as_view(), name="answer-list" ),
     path("answers/<int:pk>",AnswerRUDAPIView.as_view(), name="answer-detail" ),
+    path("answers/<int:pk>/like/",AnswerLikeAPIView.as_view(), name="answer-like" ),
 
 
 ] 
