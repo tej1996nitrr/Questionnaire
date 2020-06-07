@@ -1,0 +1,10 @@
+
+__pycache__/*
+.vscode/settings.json
+questionaire/questionaire/__pycache__
+questionaire/questions/__pycache__
+questionaire/questions/api/__pycache__
+questionaire/questions/migrations/__pycache__
+questionaire/users/__pycache__
+questionaire/users/api/__pycache__
+questionaire/users/migrations/__pycache__
