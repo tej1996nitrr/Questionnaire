@@ -1,2 +1,2 @@
 # Questionnaire
-Full stack app using Django and Vue.
+Full stack application using Django and Vue.
