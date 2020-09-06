@@ -8,8 +8,10 @@
     <form method="POST">
         {% csrf_token %}
         {{ form|crispy }}
-        <button type="submit" class="btn btn-sm btn-outline-primary">Create Account</button>
+        <button type="submit" class="btn btn-sm btn-danger">Create Account</button>
     </form>
-    <p class="mt-2">Or <a href="{% url 'login' %}">Login</a></p>
+    Or
+    <br>
+     <a href="{% url 'login' %}" class="btn btn-sm btn-danger">Login</a>
 </div>
 {% endblock %}

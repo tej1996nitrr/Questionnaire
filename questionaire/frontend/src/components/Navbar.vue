@@ -4,7 +4,7 @@
       <router-link 
         :to="{ name: 'home' }" 
         class="navbar-brand"
-        >QuestionTime
+        >Questionaire
       </router-link>
 
       <div class="collapse navbar-collapse">
