@@ -1,18 +1,29 @@
 <template>
   <div class="home">
     
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+   
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import {apiService} from "../common/api.service"
 export default {
   name: "Home",
-  components: {
-    HelloWorld
+  data(){
+    return{
+      questions:[]
+    }
+  },
+  methods:{
+    getQuestions(){
+      let endpoint = 'api/questions/'
+      apiService(endpoint).then(data => {this.questions.push(...data)})
+    }
+  },
+  created(){
+    this.getQuestions()
+    console.log(this.questions)
   }
 };
 </script>
