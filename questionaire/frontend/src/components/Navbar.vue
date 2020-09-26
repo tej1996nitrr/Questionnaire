@@ -4,14 +4,14 @@
       <router-link 
         :to="{ name: 'home' }" 
         class="navbar-brand"
-        >Questionaire
+        >QuestionTime
       </router-link>
 
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <router-link
-              :to="{ name: 'Home' }" 
+              :to="{ name: 'home' }" 
               class="btn btn-sm btn-success"
               >Home
             </router-link>
@@ -21,13 +21,6 @@
               :to="{ name: 'question-editor' }" 
               class="btn btn-sm btn-danger"
               >Ask Question
-            </router-link>
-          </li>
-          <li class="nav-item mx-1">
-            <router-link 
-              :to="{ name: 'About' }" 
-              class="btn btn-sm btn-info"
-              >About
             </router-link>
           </li>
           <li class="nav-item">
